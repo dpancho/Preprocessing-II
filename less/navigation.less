@@ -1,1 +1,50 @@
 // Navigation Styles here
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px dashed @silver;
+    padding: 20px 0;
+    
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+
+            a{
+                font-size: 1.6rem;
+                color: @font-color;
+                text-decoration: none;
+            }
+        }
+        h1{
+            font-size: 4.5rem;
+        }
+    }
+}
+
+//................MEDIA QUERIES.............//
+@media @mobile{
+    .logo{
+        flex-direction: column;
+
+        h1{
+            .center();
+        }
+        nav{
+            .center();
+            justify-content: space-between;
+            width: 90% !important;
+            padding-left: 15%;
+            padding-top: 5px;
+            align-items: baseline;
+        }
+    }
+}

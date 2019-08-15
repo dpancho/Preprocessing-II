@@ -1,1 +1,21 @@
 // Mixins in here
+.custom-btn(){
+    color: white;
+    background: @button-bg;
+    margin: 0 10px 20px;
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.center(){
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+@mobile: ~"(max-width:500px)";
